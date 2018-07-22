@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lyncschool
+    </title>
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link href="assests/vendor/slick/css/slick-theme.css" rel="stylesheet">
+    <link href="assests/slick/css/slick.css" rel="stylesheet">
+    <!-- site styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+    
+        
+        img { max-width:100%; }
+
+a {
+   -webkit-transition: all 150ms ease;
+   -moz-transition: all 150ms ease;
+   -ms-transition: all 150ms ease;
+   -o-transition: all 150ms ease;
+   transition: all 150ms ease; 
+   }
+   
+a:hover {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+   filter: alpha(opacity=50); /* IE7 */
+   opacity: 0.6;
+   text-decoration: none;
+}
+
+
+
+
+
+.thumbnails li> .fff .caption { 
+   background:#fff !important; 
+   padding:10px
+}
+
+/* Page Header */
+.page-header {
+   background: #f9f9f9 ;
+   margin: -30px -40px 40px;
+   padding: 20px 40px;
+   border-top: 4px solid #ccc;
+   color: #999;
+   text-transform: uppercase;
+}
+   
+.page-header h3 {
+   line-height: 0.88rem;
+   color: #000;
+}
+
+ul.thumbnails { 
+   margin-bottom: 0px;
+}
+
+
+
+/* Thumbnail Box */
+.caption h4 {
+   color: #444;
+}
+
+.caption p {  
+   color: #999;
+}
+
+
+
+/* Carousel Control */
+/*.control-box {
+   text-align: right;
+   width: 100%;
+}
+.carousel-control{
+   background: #666;
+   border: 0px;
+   border-radius: 0px;
+   display: inline-block;
+   font-size: 34px;
+   font-weight: 200;
+   line-height: 18px;
+   opacity: 0.5;
+   padding: 4px 10px 0px;
+   position: static;
+   height: 30px;
+   width: 15px;
+}
+*/
+
+
+/* Mobile Only */
+@media (max-width: 767px) {
+   .page-header, .control-box {
+       text-align: center;
+   } 
+}
+@media (max-width: 479px) {
+   .caption {
+       word-break: break-all;
+   }
+}
+@media only screen and (min-width: 1200px) {
+ .control-box .lft{
+  float: left;
+  position: absolute;
+  right: 1110px;
+  top: 120px;
+ }
+ .control-box .rght{
+  float: right;
+  position: absolute;
+  left: 1150px;
+  top: 120px;
+ }
+}
+
+
+li { list-style-type:none;}
+
+::selection { background: #ff5e99 ; color: #FFFFFF ; text-shadow: 0; }
+::-moz-selection { background: #ff5e99 ; color: #FFFFFF ; }
+        
+        
+        
+    </style>
+   
+</head>
+
+<header>
+    <div class="header">
+        <div class="wrapper">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="img/logo.png" alt="home"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/programs">Programs</a></li>
+                            <li><a href="/courses">Courses</a></li>
+                            <li><a href="/coming">Blog</a></li>
+                            <li class="dropdown">
+                           <a href="#" class="dropdown" data-toggle="dropdown" style="background-color: transparent;">Company  &#9662;</a>
+                           <ul class="dropdown-menu">
+                             <li><a href="/contact">Contact us</a></li>
+                             <li><a href="/Aboutus">About Us</a></li>
+                           </ul>
+                           </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!-- login & search -->
+            <div class="usercontrols navbar-right">
+                
+                <div class="login">
+                    <a href="/apply"><i class="fa fa-user-circle" aria-hidden="true"></i><span class="text">APPLY</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-block">
+        <div class="wrapper">
+            <form >
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+                    <a class="btn btn-primary input-group-addon" id="basic-addon2">Search</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+<body>
+     
+    
+    <div class="content">
+        <div class="slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="slide1">
+                            <img src="img/slide2.jpg" alt="slider Image">
+                        </div>
+                        <div class="carousel-caption">
+                           <h5>We Are <b>UNIQUE & MODERN</b></h5>
+                           <h5>In The Way</h5>
+                           <h1><b>WE TEACH</b></h1>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide2">
+                            <img src="img/slide4.jpg" alt="slider Image">
+                        </div>
+                        <div class="carousel-caption">
+                           <h1><b>We Deploy Technology</b></h1>
+                           <h2>As We See Fit</h2>
+                          
+                       </div>
+                    </div>
+                    <div class="item">
+                        <div class="slide3">
+                            <img src="img/slide11.jpg" alt="slider Image">
+                        </div>
+                        <div class="carousel-caption">
+                           <h1>Build Your Career</h1>
+                           <h2>In Technology</h2>
+                           
+                       </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon" aria-hidden="true"><img src="img/left.png" alt="home"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon" aria-hidden="true"><img src="img/right.png" alt="home"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="section1 blockwrapper">
+            <div class="text-center">
+                <div class="wrapper">
+                    <div class="desc">
+                        <h3>Welcome to Lync school</h3>
+                        <hr>
+                        <p>Welcome to world class extensive live learning opportunities at Lync School. At Digital school we encourage and guide you to explore your intellectual curiosity.</p>
+                    </div>
+                    <div class="goals-block">
+                        <div class="block blue">
+                            <div class="head clearfix">
+                                <div class="head-img">
+                                    <img src="img/goal1.png" alt="home" >
+                                </div>
+                                <h3>Mission</h3>
+                            </div>
+                            <p>Our training programs are designed to accommodate students of all levels. A student is thoroughly interviewed by a panel of interviewers.</p>
+                            
+                        </div>
+                        <div class="block green">
+                            <div class="head clearfix">
+                                <div class="head-img">
+                                    <img src="img/goal2.png" alt="home">
+                                </div>
+                                <h3>Vision</h3>
+                            </div>
+                            <p>Lync School’s Vision is to create a collaborative learning workshop where students contribute to each other's knowledge and growth.</p>
+                            
+                        </div>
+                        <div class="block red">
+                            <div class="head clearfix">
+                                <div class="head-img">
+                                    <img src="img/goal3.png" alt="home">
+                                </div>
+                                <h3>Courses</h3>
+                            </div>
+                            <p>We’ve built a world-class curriculum for programming courses.Through a combination of educational structure, top-notch instructors.</p>
+                            
+                        </div>
+                        <div class="block yellow">
+                            <div class="head clearfix">
+                                <div class="head-img">
+                                    <img src="img/goal4.png" alt="home">
+                                </div>
+                                <h3>Programs</h3>
+                            </div>
+                            <p>Our programs are designed in a non traditional approach and focus on collaboration and interaction. We are unique in the way we teach.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    <div class="container" style="margin-top: 20px;">
+        <div class="col-xs-12">
+                
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                            <ul class="thumbnails">
+                                <li class="col-sm-4">
+                                    <div class="fff">
+                                         <div style="border: 1px solid lightgray">
+                                        <div >
+                                            <a href="/frontend"><img src="img/ui-ux.jpg" alt="home frontend"></a>
+                                        </div>
+                                       
+                                            <div class="caption">
+                                                <a href="/frontend">  <p>UI/UX Designer or Front-End Developer</p> </a>
+                                            </div>
+                                            <div class="row" style="margin-top: 50px;">
+                                                
+                                              <div class="col-sm-12">
+                                               <a href="/frontend" class="btn btn-warning" style="margin: 0px 0px 10px 90px;">READ MORE</a>
+                                              </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4">
+                                    <div class="fff">
+                                        <div style="border: 1px solid lightgray">
+                                        <div>
+                                            <a href="/javascript"><img  src="img/js.jpg"  alt="home javascript"></a>
+                                        </div>
+                                        
+                                            <div class="caption">
+                                                 <a href="/javascript"><p>JavaScript Engineer</p> </a>
+                                            </div>
+                                            <div class="row" style="margin-top: 80px;">
+                                              <div class="col-sm-12">
+                                               
+                                                  <a href="/javascript" class="btn btn-warning" style="margin: 0px 0px 10px 90px;">READ MORE</a> 
+                                                
+                                                
+                                               </div> 
+                                            </div>
+                                          </div>  
+                                    </div>
+                                </li>
+                                <li class="col-sm-4">
+                                    <div style="border: 1px solid lightgray">
+                                    <div class="fff">
+                                        <div>
+                                            <a href="/devops"><img src="img/devops1.jpg" alt="home devops"></a>
+                                        </div>
+                                       
+                                        <div class="caption">
+                                            <a href="/devops"><p style="margin-left:120px">DevOps</p></a>
+                                        </div>
+                                        <div class="row" style="margin-top: 110px;">
+                                          <div class="col-sm-12">
+                                            
+                                               <a href="/z" class="btn btn-warning" style="margin: 0px 0px 10px 90px;">READ MORE</a>
+                                                
+                                            
+                                        
+                                           </div> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                      </div><!-- /Slide1 --> 
+                    <div class="item">
+                            <ul class="thumbnails">
+                                 <li class="col-sm-4">
+                                 <div style="border: 1px solid lightgray">
+                                    <div class="fff">
+                                        <div>
+                                            <a href="/mobile"><img src="img/mobile.jpg" alt="home mobile"></a>
+                                        </div>
+                                        
+                                        <div class="caption">
+                                           <a href="/mobile"> <p style="margin-left:30px;">Mobile Development</p> </a>
+                                        </div>
+                                        <div class="row" style="margin-top: 110px;">
+                                          <div class="col-sm-12">
+                                            
+                                              <a href="/mobile" class="btn btn-warning" style="margin: 0px 0px 10px 90px;">READ MORE</a> 
+                                            
+                                           
+                                          </div> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="col-sm-4">
+                                 <div style="border: 1px solid lightgray">
+                                    <div class="fff">
+                                        <div>
+                                            <a href="/cms"><img src="img/cms.jpg" alt="cms"></a>
+                                        </div>
+                                        
+                                        <div class="caption">
+                                            <a href="/cms"><p style="margin-left:30px;">CMS/Web Developer</p></a>
+                                        </div>
+                                        <div class="row" style="margin-top: 110px;">
+                                          <div class="col-sm-12">
+                                            
+                                              <a href="/cms" class="btn btn-warning" style="margin: 0px 0px 10px 90px;">READ MORE</a>  
+                                           
+                                            
+                                          </div> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="col-sm-4">
+                                 <div style="border: 1px solid lightgray">
+                                    <div class="fff">
+                                        <div>
+                                            <a href="/meanstack"><img src="img/mean (1).jpg" alt="meanstack"></a>
+                                        </div>
+                                        
+                                        <div class="caption">
+                                           <a href="/meanstack"><p style="margin-left:30px;">MEAN Stack Development</p></a>
+                                        </div>
+                                        <div class="row" style="margin-top: 110px;">
+                                          <div class="col-sm-12">
+                                            
+                                             <a href="/meanstack" class="btn btn-warning" style="margin: 0px 0px 10px 90px;">READ MORE</a>
+                                           
+                                          </div> 
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                      </div><!-- /Slide2 --> 
+                    
+                </div>
+                
+               
+               <nav>
+                    <ul class="control-box pager" style="text-align: center;">
+                        <li class="lft"><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+                        <li class="rght"><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
+                    </ul>
+                </nav>
+               <!-- /.control-box -->   
+                                      
+            </div><!-- /#myCarousel -->
+
+                
+        </div><!-- /.col-xs-12 -->          
+
+
+    </div><!-- /.container -->
+
+    <!-- end of carousel -->
+     
+         
+        <div class="section3 blockwrapper">
+         
+            <div class="wrapper">
+           
+                <div class="packages text-center">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="package blue">
+                                <div class="package-head">
+                                    <h3>Basic</h3>
+                                    
+                                </div>
+                                <div class="package-body">
+                                    <ul class="list-unstyled" style="font-size: 14px">
+                                        
+                                          <li>24 Weeks</li>
+                                        <li>Collaborative Learning</li>
+                                       <li>Email/Phone/Chat</li>
+                                        <li>Project Experience</li>
+                                         <li>24X7 Support</li>
+                                        
+                                    </ul>
+                                    <br>
+                                    <a href="apply" class="btn btn-secondary">Apply now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="package yellow">
+                                <div class="package-head">
+                                    <h3>Intermediate</h3>
+                                 
+                                </div>
+                                <div class="package-body">
+                                    <ul class="list-unstyled">
+                                        
+                                          <li>12 Weeks</li> 
+                                         <li>Email/Phone/Chat</li>
+                                        <li>Project Experience</li>
+                                         <li>24X7 Support</li>
+                                        <li>Live Sessions</li>
+                                    </ul>
+                                    <br>
+                                    <a href="/apply" class="btn btn-secondary">Apply now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="package red">
+                                <div class="package-head">
+                                    <h3>Advanced</h3>
+                                    
+                                </div>
+                                <div class="package-body">
+                                    <ul class="list-unstyled">
+                                        
+                                          <li>06 Weeks</li>  
+                                         <li>Email/Phone/Chat</li>
+                                        <li>Project Experience</li>
+                                        <li>24X7 Support</li>
+                                        <li>Live Sessions</li>
+                                    </ul>
+                                    <br>
+                                    <a href="/apply" class="btn btn-secondary">Apply now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer-links">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6>Address</h6>
+                            <p><span class="head">Lync School</span> Khajaguda, Naga Hills Rd, Madhura Nagar Colony, Gachibowli, Hyderabad, Telangana, 500008.</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6>Reach</h6>
+                            <p><span class="head">Mobile[IN]:</span> +91 70931 41616</p>
+                            <p><span class="head">Mobile[USA]:</span> +1 (415)839-2126</p>
+                            <p><span class="head">Email:</span> info@lyncschool.in</p>
+                            <h6>Connect</h6>
+                            <ul class="list-unstyled social">
+                                <li><a href="https://www.facebook.com/LyncSchool/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/lyncschool"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://plus.google.com/107475250084996429853"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/lync-school"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCFjwj6fXX3HM9DtDbnB83NQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled links">
+                            <li><a href="/programs"><i class="fa fa-angle-right" aria-hidden="true"></i>Programs</a></li>
+                            <li><a href="/Aboutus"><i class="fa fa-angle-right" aria-hidden="true"></i>Company</a></li>
+                            <li><a href="/coming"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a></li>
+                            <li><a href="/contact"><i class="fa fa-angle-right" aria-hidden="true"></i>Connect</a></li>
+                                         
+                        </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6>Contact Us</h6>
+                            <form action="/api/contact-us" method="post">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label>Name:</label>
+                                        <input type="text" name="name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email address:</label>
+                                        <input type="email" name="email" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Message:</label>
+                                        <input type="text" name="message" class="form-control" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Send</button>
+                                </fieldset>
+                            </form>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-terms">
+                    <p>@2016 LyncSchool. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+     <script type="text/javascript">
+         $(document).ready(function() {
+   $('.carousel').carousel({
+     interval: 2500
+   })
+ });
+    </script>
+</body>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/slick/js/slick.js"></script>
+<script src="js/common.bundle.js"></script>
+<script src="js/home.bundle.js"></script>
+
+</html>

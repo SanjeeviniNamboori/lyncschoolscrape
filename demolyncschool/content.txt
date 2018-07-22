@@ -1,0 +1,31 @@
+Mongo Db
+
+1.Scalability (from a standalone server to distributed architectures of huge clusters). This allows us to shard our database transparently across all our shards. This increases the performance of our data processing.
+2.Aggregation: batch data processing and aggregate calculations using native MongoDB operations.
+3.Load Balancing: automatic data movement across different shards for load balancing. The balancer decides when to migrate the data and the destination Shard, so they are evenly distributed among all servers in the cluster. Each shard stores the data for a selected range of our collection according to a partition key.
+4. Native Replication: syncing data across all the servers at the replica set.
+5. Security: authentication, authorization, etc.
+
+
+Express js
+
+
+1.Templating engines: Express comes with two templating engines, Jade and EJS, which facilitate the flow of data into a website structure.
+Allows to dynamically render HTML Pages based on passing arguments to templates.
+
+
+2.MVC pattern: Express supports the Model-View-Controller architecture, a really helpful way to build websites in a model-driven format.
+3.Platform: Node.js.
+4.Operating system: It’s cross-platform, so it’s not limited to one OS. The Express Generator lets you create complex applications quickly
+5. Routing: Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a
+specific HTTP request method (GET, POST, and so on).
+
+6. Serving Static Files
+   Express provides a built-in middleware express.static to serve static files, such as images, CSS, JavaScript, etc.
+
+   You simply need to pass the name of the directory where you keep your static assets, to the express.static middleware to start serving the files directly.
+
+7. Request & Response
+   Express application uses a callback function whose parameters are request and response objects. The request object represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, and so on.
+   The response object represents the HTTP response that an Express app sends when it gets an HTTP request.You can print req and res objects which provide a lot of information related
+   to HTTP request and response including cookies, sessions, URL, etc.

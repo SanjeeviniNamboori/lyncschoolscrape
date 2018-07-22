@@ -1,0 +1,19 @@
+{
+  "name": "lyncschool",
+  "version": "1.0.0",
+  "description": "Lync School India",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Digital Lync",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.7.1",
+    "path": "^0.12.7"
+  }
+}

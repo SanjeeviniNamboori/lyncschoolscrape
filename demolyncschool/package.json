@@ -1,0 +1,32 @@
+{
+  "name": "demolyncschool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanjeevini Rao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "fs": "0.0.1-security",
+    "module": "^1.2.5",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.6.5",
+    "multiparty": "^4.1.2",
+    "nodemailer": "^0.7.1",
+    "otplib": "^3.0.1",
+    "passcode": "^1.0.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "promise": "^7.1.1",
+    "twilio": "^2.11.0",
+    "util": "^0.10.3"
+  }
+}
